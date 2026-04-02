@@ -1381,16 +1381,14 @@ em {
 }
 
 .experts-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center;
   gap: 32px;
-  justify-items: center;
 }
 
-.experts-grid:has(.expert-card:only-child) {
-  grid-template-columns: 1fr;
+.expert-card {
   max-width: 420px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .expert-card {
